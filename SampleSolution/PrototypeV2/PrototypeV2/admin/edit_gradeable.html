@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name = 'author' content='Daniel Kiyohiko Takeuchi'>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src='../js/bootstrap.js'></script>
+        <script type="text/javascript" src='script/html5shiv.js'></script>
+    </head>
+
+    <body>
+      <div>
+        <div class='navbar navbar-static-top'>
+          <div class='navbar-inner'>
+            <a href='view_class.html' class='brand'>TWD</a>
+            <form class="navbar-search pull-left">
+              <input type="text" class="search-query" placeholder="Search">
+            </form>
+            <ul class='nav pull-right'>  
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Add<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="add_student.html">Add Students</a></li>
+                  <li><a tabindex="-1" href="add_class.html">Add Class</a></li>
+                  <li><a tabindex="-1" href="add_course.html">Add Courses</a></li>
+                 </ul>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="view_student.html">View Students</a></li>
+                  <li><a tabindex="-1" href="view_class.html">View Class</a></li>
+                  <li><a tabindex="-1" href="view_module.html">View Modules</a></li>
+                  <li><a tabindex="-1" href="view_course.html">View Courses</a></li>
+                  <li><a tabindex="-1" href="view_all_grades.html">All Grades</a></li>
+                  <li><a tabindex="-1" href="view_teacher_course.html">My Courses</a></li>
+                 </ul>
+               </li>
+              <li class="divider-vertical"></li>
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="login.html">Logout</a></li>
+                 </ul>
+               </li>
+            </ul>
+            <form class="navbar-form pull-right" action='view_class.html'>
+              <select type="text" class="span2">
+                <option>TWD19</option>
+                <option>TWD18</option>
+              </select>
+              <button type="submit" class="btn">View</button>
+            </form>
+          </div>
+        </div>
+      </div>
+        
+
+      <section class='container'>
+        <div class="page-header">
+          <h1>Edit Gradeable Item</h1>
+        </div>
+        <div>
+          <form class="form-inline">
+            <label>Add item to</label>
+            <select>
+              <option>HTML/CSS1</option>
+              <option>HTML/CSS2</option>
+            </select><br><br>
+            <fieldset>
+              <label>Item Name</label><input type="text" placeholder="Class Name">
+              <label>Item Type</label>
+                <select class="input-medium">
+                  <option>Assignment</option>
+                  <option>Project</option>
+                  <option>Participation</option>
+                </select>
+                <label>Weight(%)</label><input type='number' class='input-small'><br><br>
+            </fieldset>
+            <fieldset>
+              <legend>Parameter 1</legend>
+                <label>Parameter Name</label><input type="text" placeholder="Class Name">
+                <label>Weight(%)</label><input type='number' class='input-small'><br><br>
+              </fieldset>
+             <legend>Parameter 2</legend>
+                <label>Parameter Name</label><input type="text" placeholder="Class Name">
+                <label>Weight(%)</label><input type='number' class='input-small'><br><br><br><br>
+              </fieldset>
+            <button type="button " class="btn btn-danger">Add Parameter</button>
+            <button type="submit" class="btn btn-primary">Save</button>
+          </form>
+
+
+        </div>
+      </section>
+
+
+    </body>
+</html>

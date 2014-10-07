@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name = 'author' content='Daniel Kiyohiko Takeuchi'>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/global.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src='../js/bootstrap.js'></script>
+        <script type="text/javascript" src='script/html5shiv.js'></script>
+    </head>
+
+    <body>
+      <div>
+        <div class='navbar navbar-static-top'>
+          <div class='navbar-inner'>
+            <a href='view_teacher_course.html' class='brand'>TWD</a>
+            <form class="navbar-search pull-left">
+              <input type="text" class="search-query" placeholder="Search">
+            </form>
+            <ul class='nav pull-right'>  
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="view_student.html">View Students</a></li>
+                  <li><a tabindex="-1" href="view_teacher_course.html">My Courses</a></li>
+                 </ul>
+               </li>
+              <li class="divider-vertical"></li>
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="teacher_login.html">Logout</a></li>
+                 </ul>
+               </li>
+            </ul>
+            <form class="navbar-form pull-right" action='view_teacher_course.html'>
+              <select type="text" class="span2">
+                <option>TWD19</option>
+                <option>TWD18</option>
+              </select>
+              <button type="submit" class="btn">View</button>
+            </form>
+          </div>
+        </div>
+      </div>
+        
+
+      <section class='container'>
+        <div class="page-header">
+          <h2><a href="view_student_course_grade.html">Peter Jones</a><small>   TWD19 Managing Websites</h2>
+        </div>
+        <div>
+
+          <a href="view_student.html"><button type="button" class="btn btn-success">View Students</button></a>
+   
+        <div>
+            <h3>Assignment 1</h3>
+            <h4>20% of course</h4>
+            
+            <form class='form-inline assignment-form' action='view_student_course_grade.html'>
+              <fieldset>
+                <label>Followed Instructions</label>
+                <input type='number' class='input-small'>/20
+              </fieldset>
+
+              <fieldset>
+                <label>Professionalism</label>
+                <input type='number' class='input-small'>/20
+              </fieldset>
+
+              <fieldset>
+                <label>Presentation</label>
+                <input type='number' class='input-small'>/55
+              </fieldset>
+
+              <fieldset>
+                <label>Participation</label>
+                <input type='number' class='input-small'>/5
+              </fieldset>
+
+              <fieldset>
+                <label>Total</label>
+                <input type='number' class='input-small' readonly>/100
+              </fieldset>
+
+              <fieldset>
+                <textarea rows="6" placeholder = "Comments"></textarea><br><br>
+                <label><input type="checkbox">   Late</label><br><br>
+                <p><input type="number" disabled class='input-small'> % deduction</p>
+              </fieldset>
+
+              <button type="submit" class="btn btn-primary">Save</button>
+          </form>
+        </div>
+      </section>
+
+
+    </body>
+</html>

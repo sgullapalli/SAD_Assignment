@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name = 'author' content='Daniel Kiyohiko Takeuchi'>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/global.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src='../js/bootstrap.js'></script>
+        <script type="text/javascript" src='script/html5shiv.js'></script>
+    </head>
+
+    <body>
+      <div>
+        <div class='navbar navbar-static-top'>
+          <div class='navbar-inner'>
+            <a href='view_class.html' class='brand'>TWD</a>
+            <form class="navbar-search pull-left">
+              <input type="text" class="search-query" placeholder="Search">
+            </form>
+            <ul class='nav pull-right'>  
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Add<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="add_student.html">Add Students</a></li>
+                  <li><a tabindex="-1" href="add_class.html">Add Class</a></li>
+                  <li><a tabindex="-1" href="add_course.html">Add Courses</a></li>
+                 </ul>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="view_student.html">View Students</a></li>
+                  <li><a tabindex="-1" href="view_class.html">View Class</a></li>
+                  <li><a tabindex="-1" href="view_module.html">View Modules</a></li>
+                  <li><a tabindex="-1" href="view_course.html">View Courses</a></li>
+                  <li><a tabindex="-1" href="view_all_grades.html">All Grades</a></li>
+                  <li><a tabindex="-1" href="view_teacher_course.html">My Courses</a></li>
+                 </ul>
+               </li>
+              <li class="divider-vertical"></li>
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="login.html">Logout</a></li>
+                 </ul>
+               </li>
+            </ul>
+            <form class="navbar-form pull-right" action='view_class.html'>
+              <select type="text" class="span2">
+                <option>TWD19</option>
+                <option>TWD18</option>
+              </select>
+              <button type="submit" class="btn">View</button>
+            </form>
+          </div>
+        </div>
+      </div>
+        
+
+      <section class='container'>
+        <div class="page-header">
+          <h1>TDW19 Class<small>   September 2013~April 2014</h1>
+        </div>
+        <div>
+
+          <a href="edit_class.html"><button type='button' class="btn btn-danger">Edit Class</button></a>
+          <a href="view_student.html"><button type="button" class="btn btn-success">View Students</button></a>
+          <div>
+            <h3><a href="view_module.html">Planning &amp; Designing Websites</a></h3>
+            <h4 class='weight'>(8 credits)</h4>
+            <table class='table'>
+              <tr>
+                <th></th>
+                <th>hours</th>
+                <th>weight</th>
+              </tr>
+              <tr>
+                <th><a href="view_course.html">Managing Web Sites</a></th>
+                <td>18</td>
+                <td>21%</td>
+              </tr>
+              <tr>
+                <th>User Experience Design</th>
+                <td>24</td>
+                <td>31%</td>
+              </tr>
+              <tr>
+                <th>Photoshop - level 1</th>
+                <td>12</td>
+                <td>16%</td>
+              </tr>
+              <tr>
+                <th>Illustrator</th>
+                <td>12</td>
+                <td>16%</td>
+              </tr>
+              <tr>
+                <th>Photoshop - level 2</th>
+                <td>12</td>
+                <td>16%</td>
+              </tr>
+            </table>
+          </div>
+
+          <div>
+            <h3>Coding &amp; Developing Websites</h3>
+            <h4 class='weight'>(10 credits)</h4>
+            <table class='table'>
+              <tr>
+                <th></th>
+                <th>hours</th>
+                <th>weight</th>
+              </tr>
+              <tr>
+                <th>XHTML / CSS - level 1</th>
+                <td>12</td>
+                <td>10%</td>
+              </tr>
+              <tr>
+                <th>XHTML / CSS - level 2</th>
+                <td>12</td>
+                <td>10%</td>
+              </tr>
+              <tr>
+                <th>HTML5 / CSS3 - level 1</th>
+                <td>12</td>
+                <td>10%</td>
+              </tr>
+              <tr>
+                <th>HTML5 / CSS3 - level 2</th>
+                <td>12</td>
+                <td>10%</td>
+              </tr>
+              <tr>
+                <th>Intro to JavaScript &amp; jQuery</th>
+                <td>18</td>
+                <td>15%</td>
+              </tr>
+              <tr>
+                <th>Intro PHP</th>
+                <td>45</td>
+                <td>45%</td>
+              </tr>
+            </table>
+          </div>
+
+          <div>
+            <h3>Testing &amp; Managing Websites</h3>
+            <h4 class='weight'>(8 credits)</h4>
+              <table class='table'>
+              <tr>
+                <th></th>
+                <th>hours</th>
+                <th>weight</th>
+              </tr>
+              <tr>
+                <th>Web Usability Testing</th>
+                <td>12</td>
+                <td>16%</td>
+              </tr>
+              <tr>
+                <th>SEO / Web Analytics / Social Media</th>
+                <td>24</td>
+                <td>24%</td>
+              </tr>
+              <tr>
+                <th>Professional Skills (Resume &amp; Interview Skills)</th>
+                <td>12</td>
+                <td>0%</td>
+              </tr>
+              <tr>
+                <th>Web Site ReDesign Group Project</th>
+                <td></td>
+                <td>60%</td>
+              </tr>
+            </table>
+          </div>
+
+          <div>
+            <h3>Specialty Topics</h3>
+            <h4 class='weight'>(6 credits)</h4>
+            <table class='table'>
+              <tr>
+                <th></th>
+                <th>hours</th>
+                <th>weight</th>
+              </tr>
+              <tr>
+                <th>Responsive &amp; Mobile Websites</th>
+                <td>12</td>
+                <td>30%</td>
+              </tr>
+              <tr>
+                <th>Content Management Systems - WordPress</th>
+                <td>30</td>
+                <td>35%</td>
+              </tr>
+              <tr>
+                <th>Content Management Systems - Drupal</th>
+                <td>30</td>
+                <td>35%</td>
+              </tr>
+            </table>
+          </div>
+
+          <div>
+            <h3>Project - Final client project</h3>
+            <h4 class='weight'>(8 credits)</h4>
+              <table class='table'>
+              <tr>
+                <th></th>
+                <th>hours</th>
+                <th>weight</th>
+              </tr>
+              <tr>
+                <th>Web Portfolio Development - final portfolio site</th>
+                <td></td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <th>Final Client Project</th>
+                <td></td>
+                <td>80%</td>
+              </tr>
+            </table>
+
+
+        </div>
+      </section>
+
+
+    </body>
+</html>

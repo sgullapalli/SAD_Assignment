@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name = 'author' content='Daniel Kiyohiko Takeuchi'>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/global.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src='../js/bootstrap.js'></script>
+        <script type="text/javascript" src='script/html5shiv.js'></script>
+    </head>
+
+    <body>
+      <div>
+        <div class='navbar navbar-static-top'>
+          <div class='navbar-inner'>
+            <a href='view_class.html' class='brand'>TWD</a>
+            <form class="navbar-search pull-left">
+              <input type="text" class="search-query" placeholder="Search">
+            </form>
+            <ul class='nav pull-right'>  
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Add<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="add_student.html">Add Students</a></li>
+                  <li><a tabindex="-1" href="add_class.html">Add Class</a></li>
+                  <li><a tabindex="-1" href="add_course.html">Add Courses</a></li>
+                 </ul>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="view_student.html">View Students</a></li>
+                  <li><a tabindex="-1" href="view_class.html">View Class</a></li>
+                  <li><a tabindex="-1" href="view_module.html">View Modules</a></li>
+                  <li><a tabindex="-1" href="view_course.html">View Courses</a></li>
+                  <li><a tabindex="-1" href="view_all_grades.html">All Grades</a></li>
+                  <li><a tabindex="-1" href="view_teacher_course.html">My Courses</a></li>
+                 </ul>
+               </li>
+              <li class="divider-vertical"></li>
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="login.html">Logout</a></li>
+                 </ul>
+               </li>
+            </ul>
+            <form class="navbar-form pull-right" action='view_class.html'>
+              <select type="text" class="span2">
+                <option>TWD19</option>
+                <option>TWD18</option>
+              </select>
+              <button type="submit" class="btn">View</button>
+            </form>
+          </div>
+        </div>
+      </div>
+        
+
+      <section class='container'>
+        <div class="page-header">
+          <h1>Edit Course</h1>
+        </div>
+        <div>
+          <form class="form-inline">
+            <label>Add course to</label>
+            <select>
+              <option>Planning and Designing Websites</option>
+              <option>Coding and Developing Websites</option>
+            </select><br><br>
+            <fieldset>
+              <label>Course Name</label><input type="text">
+                <label>Weight(%)</label><input type='number' class='input-small'>
+                <label>Course Hours</label><input type='number' class='input-small'><br><br>
+                <label>Instructor</label>
+                <select class="input-medium">
+                  <option>Pat McGee</option>
+                  <option>John Bowyer-Smyth</option>
+                </select>
+                <label>Instructor 2 (optional)</label>
+                <select class="input-medium">
+                  <option></option>
+                  <option>Pat McGee</option>
+                  <option>John Bowyer-Smyth</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+              <legend class="sub-title">Gradeable Item 1</legend>
+              <label>Item Name</label><input type="text">
+              <label>Item Type</label>
+              <select class="input-medium">
+                <option>Assignment</option>
+                <option>Project</option>
+                <option>Participation</option>
+              </select>
+              <label>Weight(%)</label><input type='number' class='input-small'><br><br>
+
+              <div class="gradeables">
+                <fieldset>
+                  <legend><h4 class="sub-title2">Parameters</h4></legend>
+                    <table class="gradeable-table">
+                      <tr>
+                        <th>Parameter Name</th>
+                        <th>Weight(%)</th>
+                      </tr>
+                      <tr>
+                        <td><input type="text"></td>
+                        <td><input type='number' class='input-small'></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text"></td>
+                        <td><input type='number' class='input-small'></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text"></td>
+                        <td><input type='number' class='input-small'></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text"></td>
+                        <td><input type='number' class='input-small'></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text"></td>
+                        <td><input type='number' class='input-small'></td>
+                      </tr>
+                    </table>
+                </fieldset>        
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend class="sub-title">Gradeable Item 2</legend>
+              <label>Item Name</label><input type="text">
+              <label>Item Type</label>
+              <select class="input-medium">
+                <option>Assignment</option>
+                <option>Project</option>
+                <option>Participation</option>
+              </select>
+              <label>Weight(%)</label><input type='number' class='input-small'><br><br>
+
+              <div class="gradeables">
+                <fieldset>
+                  <legend><h4 class="sub-title2">Parameters</h4></legend>
+                    <table class="gradeable-table">
+                      <tr>
+                        <th>Parameter Name</th>
+                        <th>Weight(%)</th>
+                      </tr>
+                      <tr>
+                        <td><input type="text"></td>
+                        <td><input type='number' class='input-small'></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text"></td>
+                        <td><input type='number' class='input-small'></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text"></td>
+                        <td><input type='number' class='input-small'></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text"></td>
+                        <td><input type='number' class='input-small'></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text"></td>
+                        <td><input type='number' class='input-small'></td>
+                      </tr>
+                    </table>
+                </fieldset>        
+              </div>
+            </fieldset>
+
+            <button type="button " class="btn btn-danger">Add Gradeable Item</button>
+            <button type="submit" class="btn btn-primary">Save</button>
+          </form>
+
+
+        </div>
+      </section>
+
+
+    </body>
+</html>

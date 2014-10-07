@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name = 'author' content='Daniel Kiyohiko Takeuchi'>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css/global.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src='../js/bootstrap.js'></script>
+        <script type="text/javascript" src='script/html5shiv.js'></script>
+    </head>
+
+    <body>
+      <div>
+        <div class='navbar navbar-static-top'>
+          <div class='navbar-inner'>
+            <a href='view_class.html' class='brand'>TWD</a>
+            <form class="navbar-search pull-left">
+              <input type="text" class="search-query" placeholder="Search">
+            </form>
+            <ul class='nav pull-right'>  
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Add<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="add_student.html">Add Students</a></li>
+                  <li><a tabindex="-1" href="add_class.html">Add Class</a></li>
+                  <li><a tabindex="-1" href="add_course.html">Add Courses</a></li>
+                 </ul>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="view_student.html">View Students</a></li>
+                  <li><a tabindex="-1" href="view_class.html">View Class</a></li>
+                  <li><a tabindex="-1" href="view_module.html">View Modules</a></li>
+                  <li><a tabindex="-1" href="view_course.html">View Courses</a></li>
+                  <li><a tabindex="-1" href="view_all_grades.html">All Grades</a></li>
+                  <li><a tabindex="-1" href="view_teacher_course.html">My Courses</a></li>
+                 </ul>
+               </li>
+              <li class="divider-vertical"></li>
+              <li class='dropdown'>
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="login.html">Logout</a></li>
+                 </ul>
+               </li>
+            </ul>
+            <form class="navbar-form pull-right" action='view_class.html'>
+              <select type="text" class="span2">
+                <option>TWD19</option>
+                <option>TWD18</option>
+              </select>
+              <button type="submit" class="btn">View</button>
+            </form>
+          </div>
+        </div>
+      </div>
+        
+
+      <section class='container'>
+        <div class="page-header">
+          <h1>Add Student</h1>
+        </div>
+        <div>
+          <form class="form-inline">
+            <label>Add students to</label>
+            <select>
+              <option>TWD19</option>
+              <option>TWD18</option>
+            </select><br><br><br>
+
+            <table id="student-table">
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Password</th>
+              </tr>
+              <tr>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+              </tr>
+              <tr>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+              </tr>
+              <tr>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+              </tr>
+              <tr>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+              </tr>
+              <tr>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+              </tr>
+              <tr>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+              </tr>
+              <tr>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+              </tr>
+              <tr>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+              </tr>
+              <tr>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+              </tr>
+              <tr>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+                <td><input type='text'></td>
+              </tr>
+            </table>
+
+            
+            <button type="submit" class="btn btn-primary">Save</button>
+          </form>
+
+
+        </div>
+      </section>
+
+
+    </body>
+</html>
