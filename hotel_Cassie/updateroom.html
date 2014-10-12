@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Update Room</title>
+    <meta name="author" content="Cassie Xu" />
+    <meta name="description"
+          content="This is a page about updating a room information">
+    <link href="styles.css" rel="stylesheet" />
+
+</head>
+<body>
+
+ <main id="main" class="main">
+     <form action="#" method="get"
+           enctype="multipart/form-data"
+           class="form1">
+         <fieldset>
+            <legend>Update a Room Type</legend>
+              <ol>
+                <li>
+     <!--               <label for="selectroom">Seclte Room Type</label>
+                    <select name="selectroom" id="selectroom"
+                            multiple="multiple"
+                            >
+                        <option value="stdking">Standard King Room</option>
+                        <option value="stdqueen">Standard Queen Room</option>
+                        <option value="baclcony">Baclcony Studiot</option>
+                        <option value="deluxe">Deluxe King Room</option>
+                        <option value="executive">Executive Suite</option>
+                    </select>  -->
+
+
+                 <label for="selectroom">Seclte Room Type</label>
+                 <input type="text" name="selectroom" id="selectroom"
+                        list="selectrooms" />
+                 <datalist id="selectrooms">
+                     <option value="Standard King Room">Standard King Room</option>
+                     <option value="Standard Queen Room">Standard Queen Room</option>
+                     <option value="Baclcony Studio">Baclcony Studio</option>
+                     <option value="Deluxe King Room">Deluxe King Room</option>
+                     <option value="Deluxe double Room">Deluxe double Room</option>
+                     <option value="Executive Suite">Executive Suite</option>
+                 </datalist>
+                </li>
+                <li>
+                 <label for="noofbed">Number of Bed</label>
+                 <input type="text" name="noofbed" id="noofbed"
+                        required="required" autofocus="autofocus"
+                        placeholder="2"
+                        maxlength="20" size="20" />
+                </li>
+                <li>
+                 <label for="roomrate">Room Rate</label>
+                 <input type="text" name="roomrate" id="roomrate"
+                        required="required" autofocus="autofocus"
+                        placeholder="$199"
+                        maxlength="20" size="20" />
+                </li>
+                <li>
+                 <label for="roomdiscription">Room Discription</label>
+                 <textarea name="Room Discription" id="roomdiscription"
+                           rows=" 10"
+                           cols=" 30"
+
+                           placeholder="One King bed, executive writing desk and
+                           ergonomic chair,iPad and docking station, Sharp flatscreen television,
+                           Complimentary Wi-Fi
+                           Spa bathroom with large glass walk-in shower or combination soaker tub/shower
+                           Up to 305 sq ft (28.4 sq m)"></textarea>
+                </li>
+                <li>
+                 <input type="submit" name="update" value="update">
+                </li>
+
+              </ol>
+         </fieldset>
+
+
+
+     </form>
+</main><!-- #main.main -->
+
+</div><!-- .wrapper -->
+</body>
+</html>

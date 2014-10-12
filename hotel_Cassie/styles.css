@@ -1,0 +1,38 @@
+.form1 {
+    border: 2px solid #333;
+    background-color: #cccc55;
+    padding: 1em 2em;
+}
+fieldset {
+    border: 2px solid #999999;
+    padding: 1em 2em;
+}
+legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+.form1 ol {
+    list-style-type: none;
+}
+.form1 li {
+    padding: .5em 1em;
+    border-bottom: 1px solid #cccc55;
+}
+.form1 label {
+    float: left;
+    text-align: right;
+    width: 130px;
+    padding: 0 1em;
+}
+.form1 li li,
+.form1 li li:last-child,
+.form1 > ol > li:last-child {
+    border: none;
+}
+.form1 li li label {
+    float: none;
+}
+.form1 input[type=radio],
+.form1 input[type=checkbox]{
+    float: left;
+}
