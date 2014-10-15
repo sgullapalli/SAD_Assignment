@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Make Payment</title>
+    <meta name="author" content="Cassie Xu" />
+    <meta name="description" content="This is a page about making payment">
+    <link rel="stylesheet" type="text/css" href="../css/bs.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src='../js/bootstrap.js'></script>
+    <script type="text/javascript" src='script/html5shiv.js'></script>
+    <link href="../css/reg.css" rel="stylesheet"/>
+</head>
+<body>
+<header id="header" class="header">
+    <div class='navbar navbar-static-top'>
+        <div class='navbar-inner'>
+            <a href='home.html' class='brand'><b>Hotel</b></a>
+            <ul class='nav pull-right'>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="home.html">Home</a></li>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="booking.html">Book A Room</a></li>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="roomDescription.html">View Rooms</a></li>
+                <li class="divider-vertical"></li>
+                <li class='dropdown'>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="login.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main id="main_payment" class="main_payment">
+    <form action="paymentConfirm.html" method="get"enctype="multipart/form-data" class="form4">
+        <fieldset>
+            <h1 class="form_heading">Make Payment</h1>
+            <ol>
+                <li>
+                    <label for="amount">Name :</label>
+                    <input id="amount" type="text" placeholder="First & Last name" maxlength="70" size="40"/>
+                </li>
+                <li>
+                    <label for="">Login Id :</label>
+                    <input id="" type="text" placeholder="Login ID" maxlength="70" size="40"/>
+                </li>
+                <li>
+                    <label for="cardType">Card Type :</label>
+                    <select id="cardType" class="selectCard">
+                        <option>Choose</option>
+                        <option value="American Express">Visa</option>
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="Visa">Visa</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="creditCard">Credit card :</label>
+                    <input id="creditCard" type="text" placeholder="card no" maxlength="70" size="40"/>
+                </li>
+                <li>
+                    <label>Expiry Date :</label>
+                    <input id="year" type="date" placeholder="MM/YYYY" maxlength="20" size="20"/>
+                </li>
+                <li>
+                    <a href="paymentConfirm.html"><button type="submit" class="btn btn-primary btn-pay">Pay Now</button></a>
+                </li>
+            </ol>
+        </fieldset>
+    </form>
+</main><!-- #main_payment.main_payment-->
+</body>
+</html>

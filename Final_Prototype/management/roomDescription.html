@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rooms Information</title>
+    <link rel="stylesheet" type="text/css" href="../css/bs.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/reg.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src='../js/bootstrap.js'></script>
+</head>
+<body class="body">
+<header id="header" class="header">
+    <div class='navbar navbar-static-top'>
+        <div class='navbar-inner'>
+            <a href='home.html' class='brand'><b>Hotel</b></a>
+            <ul class='nav pull-right'>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="home.html">Home</a></li>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="createRoom.html">Create Room</a></li>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="booking.html">Book A Room</a></li>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="updateRoom.html">Update Room</a></li>
+                <li class="divider-vertical"></li>
+                <li class='dropdown'>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="roomDescription.html">View Rooms</a></li>
+                        <li><a tabindex="-1" href="bookingSummary.html">View Booking Summary</a></li>
+                        <li><a tabindex="-1" href="customerProfiles.html">View Customer Profiles</a></li>
+                        <li><a tabindex="-1" href="paymentSummary.html">View Payment Summary</a></li>
+                    </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li class='dropdown'>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="login.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main class="roomsInfo_main" id = "roomsInfo_main">
+    <h1 class="roomInfo_heading">Rooms & Suites </h1>
+    <table class="rooms_table">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Beds</th>
+                <th>Price</th>
+                <th>Book</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="../images/room1.jpg" width="200" height="100"></td>
+                <td>Standard Double Room</td>
+                <td><p>"Standard room with a queen size bed, with alarm clock, attached bath"</p></td>
+                <td> 1 Full</td>
+                <td>$179</td>
+                <td><a href="booking.html"><button type="button" class="btn btn-primary btn-table">Book</button></a></td>
+            </tr>
+            <tr>
+                <td><img src="../images/room2.jpg" width="200" height="100"></td>
+                <td>Standard Queen Room</td>
+                <td><p>"Standard room with a king size bed, with alarm clock, attached bath, TV & radio"</p></td>
+                <td>1 Queen</td>
+                <td>$210</td>
+                <td><a href="booking.html"><button type="button" class="btn btn-primary btn-table">Book</button></a></td>
+            </tr>
+            <tr>
+                <td><img src="../images/room3.jpg" width="200" height="100"></td>
+                <td>Deluxe Double Room</td>
+                <td><p>"Luxury room with cozy queen size beds, with alarm clock, attached bath, TV & radio"</p></td>
+                <td>2 Queen</td>
+                <td>$300</td>
+                <td><a href="booking.html"><button type="button" class="btn btn-primary btn-table">Book</button></a></td>
+            </tr>
+            <tr>
+                <td><img src="../images/room4.jpg" width="200" height="100"></td>
+                <td>Deluxe King Room</td>
+                <td><p>"Luxury room with cozy king size beds, with alarm clock, attached bath, TV & radio "</p></td>
+                <td>2 King</td>
+                <td>$375</td>
+                <td><a href="booking.html"><button type="button" class="btn btn-primary btn-table">Book</button></a></td>
+            </tr>
+            <tr>
+                <td><img src="../images/room5.jpg" width="200" height="100"></td>
+                <td>Balcony Studio</td>
+                <td><p>"Luxurious air conditioning studio with a cozy king size bed, corner sofa, standing kitchen, closets, balcony,
+                      alarm clock, attached bath, TV & radio "</p></td>
+                <td>2 King</td>
+                <td>$600</td>
+                <td><a href="booking.html"><button type="button" class="btn btn-primary btn-table">Book</button></a></td>
+            </tr>
+            <tr>
+                <td><img src="../images/room6.jpg" width="200" height="100"></td>
+                <td>Executive Suite</td>
+                <td><p>"Executive air-conditioning suite with a cozy king size bed, spectacular balcony view, corner sofa, TV, coffee maker,
+                    fridge,alarm clock, attached bath,Sauna,and radio "</p></td>
+                <td>2 King</td>
+                <td>$700</td>
+                <td><a href="booking.html"><button type="button" class="btn btn-primary btn-table">Book</button></a></td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>

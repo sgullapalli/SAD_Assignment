@@ -1,0 +1,98 @@
+﻿* {
+font-size: 100%;
+line-height: 1.3em;
+color: #242424;
+
+}
+
+#login-box {
+	width: 300px;
+	height: auto;
+	margin: 200px auto;
+}
+
+#login-box h4 {
+	margin-bottom: 30px;
+}
+
+#login-box input{
+	height: 35px;
+	font-size: 1.2em;
+}
+
+table tr:hover {
+	background-color: #CCF2FF;
+}
+
+.weight {
+	color: #E3345A;
+}
+
+fieldset {
+	margin-bottom: 20px;
+}
+
+fieldset input, fieldset label {
+	margin-right: 10px;
+}
+
+.sub-title {
+	color: #E3345A;
+}
+
+.sub-title2 {
+	color: #0D6CBF;
+}
+
+fieldset:hover {
+	background-color: #E8F9FF;
+}
+
+#student-table {
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+#student-table tr{
+	height: 50px;
+}
+
+.total-mark {
+	background-color: #E1F2EA;
+}
+
+.assignment-form{
+	width: 400px;
+	text-align: right;
+	margin-top: 50px;
+}
+
+.comment-box textarea {
+	width: 100%;
+}
+
+.comment-box input[type=checkbox]{
+	margin: 0 10px;
+	display: inline;
+}
+
+.comment {
+	margin: 20px 0 50px 0;
+	border: 1px solid #E3E3E3;
+	padding: 20px;
+}
+
+.teacher-student-table {
+	margin: 50px;
+}
+
+.gradeables {
+	margin: 20px 0 50px 30px;
+	width: 70%;
+}
+
+.gradeable-table tr {
+	height: 40px;
+}
+
+

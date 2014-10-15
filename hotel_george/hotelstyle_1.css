@@ -1,0 +1,50 @@
+
+
+body {
+    background: url( images/homepage.jpg)no-repeat center center fixed;
+    background-size: cover;
+    font-size: 16px;
+    line-height: 1.5;
+
+    }
+body{
+    width: 940px;
+    margin: 0 auto
+    }
+h4
+{
+float: left;
+    border-top-width: 200px;
+}
+
+
+/*no bullets*/
+header ul.no_bullet {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;}
+
+
+
+/*-------------header section--------------*/
+#headerNavigation{
+    float: right;
+    padding: 0 0 0 0;
+    background-color: white;
+    border-radius: 15px;}
+
+#headerNavigation li {
+    float: left;
+    margin: 0 0 5px 20px;}
+
+#headerNavigation li a {
+padding: 20px 15px;
+font-weight: bold;
+color:darkgoldenrod;
+}
+#headerNavigation li a:focus{
+   padding: 5%;
+    color:darkgrey;
+}
+
+

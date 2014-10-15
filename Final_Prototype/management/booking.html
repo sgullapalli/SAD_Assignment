@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking</title>
+    <link rel="stylesheet" type="text/css" href="../css/bs.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src='../js/bootstrap.js'></script>
+    <!--<script type="text/javascript" src='script/html5shiv.js'></script>-->
+    <link rel="stylesheet" type="text/css" href="../css/reg.css">
+</head>
+<body>
+    <header id="header" class="header">
+    <div class='navbar navbar-static-top'>
+        <div class='navbar-inner'>
+            <a href='home.html' class='brand'><b>Hotel</b></a>
+            <ul class='nav pull-right'>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="home.html">Home</a></li>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="createRoom.html">Create Room</a></li>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="booking.html">Book A Room</a></li>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="updateRoom.html">Update Room</a></li>
+                <li class="divider-vertical"></li>
+                <li class='dropdown'>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="roomDescription.html">View Rooms</a></li>
+                        <li><a tabindex="-1" href="bookingSummary.html">View Booking Summary</a></li>
+                        <li><a tabindex="-1" href="customerProfiles.html">View Customer Profiles</a></li>
+                        <li><a tabindex="-1" href="paymentSummary.html">View Payment Summary</a></li>
+                    </ul>
+                </li>
+                <li class="divider-vertical"></li>
+                <li class='dropdown'>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="login.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <div class="bookRoom">
+        <form class="bookRoom_form" action="bookingConfirm.html">
+        <fieldset>
+            <h1 class="bookRoom_heading">Book Room</h1>
+            <ol>
+            <li>
+                <label for="fname">First Name :</label>
+                <input id="fname" type="text" placeholder="First Name" maxlength="70" size="40"/>
+            </li>
+            <li>
+                <label for="lname">Last Name :</label>
+                <input id="lname" type="text" placeholder="Last Name" maxlength="70" size="40"/>
+            </li>
+            <li>
+                <label for="loginId">Login Id :</label>
+                <input id="loginId" type="text" placeholder="Login ID" maxlength="70" size="40"/>
+            </li>
+            <li>
+                <label for="selectRoom">Select Room :</label>
+                <select id="selectRoom" class="selectRoom" multiple="multiple">
+                    <option>Choose</option>
+                    <option value="Standard Double Room">Standard Double Room</option>
+                    <option value="Standard Queen Room">Standard Queen Room</option>
+                    <option value="Deluxe Double Room">Deluxe Double Room</option>
+                    <option value="Deluxe King Room">Deluxe King Room</option>
+                    <option value="Balcony Studio">Balcony Studio</option>
+                    <option value="Executive Suite">Executive Suite</option>
+                </select>
+            </li>
+            <li>
+                <label for="noOfBed">Number of Beds :</label>
+                <input type="text" id="noOfBed" maxlength="70" size="40" />
+            </li>
+            <li>
+                <label for="checkIn">Check In :</label>
+                <input id="checkIn" type="date" maxlength="70" size="40"/>
+            </li>
+            <li>
+                <label for="checkOut">Check Out :</label>
+                <input id="checkOut" type="date" maxlength="70" size="40"/>
+            </li>
+            <li>
+            <a href="bookingConfirm.html"><button type="button" class="btn btn-primary btn-update">Book</button></a>
+        </li>
+    </ol>
+    </fieldset>
+    </form>
+    </div>
+</body>
+</html>

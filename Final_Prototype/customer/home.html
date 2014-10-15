@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HotelProject">
+    <meta name="keywords" content="reservations">
+    <meta name="author" content="Georgios">
+    <title>Hotel home page</title>
+    <link rel="stylesheet" type="text/css" href="../css/bs.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src='../js/bootstrap.js'></script>
+    <link rel="stylesheet" href="../css/reg.css"/>
+</head>
+<body>
+<header id="header" class="header">
+    <div class='navbar navbar-static-top'>
+        <div class='navbar-inner'>
+            <a href='home.html' class='brand'><b>Hotel</b></a>
+            <ul class='nav pull-right'>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="home.html">Home</a></li>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="booking.html">Book A Room</a></li>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="roomDescription.html">View Rooms</a></li>
+                <li class="divider-vertical"></li>
+                <li class='dropdown'>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="login.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="home_main">
+    <form class="form0" action="roomDescription.html">
+        <ol>
+            <li>
+                <label for="selectRoom">Select Room</label>
+                <select id="selectRoom" class="selectRoom">
+                    <option>Choose</option>
+                    <option value="Standard Double Room">Standard Double Room</option>
+                    <option value="Standard Queen Room">Standard Queen Room</option>
+                    <option value="Deluxe Double Room">Deluxe Double Room</option>
+                    <option value="Deluxe King Room">Deluxe King Room</option>
+                    <option value="Balcony Studio">Balcony Studio</option>
+                    <option value="Executive Suite">Executive Suite</option>
+                </select>
+            </li>
+            <li>
+                <label for="noOfBed">Number of Beds</label>
+                <input type="text" id="noOfBed" maxlength="40" size="30" />
+            </li>
+            <li>
+                <label for="checkIn">Check In</label>
+                <input id="checkIn" type="date" maxlength="40" size="30"/>
+            </li>
+            <li>
+                <label for="checkOut">Check Out</label>
+                <input id="checkOut" type="date" maxlength="40" size="30"/>
+            </li>
+            <li>
+                <a href="roomDescription.html"><button type="button" class="btn btn-primary btn-find">Find</button></a>
+            </li>
+        </ol>
+    </form>
+    <div class="hotelInfo">
+        <p><b>Hotel Description</b></p>
+        <p>
+             Here is the sample description about the hotel
+        </p>
+    </div>
+</div>
+</body>
+</html>

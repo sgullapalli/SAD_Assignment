@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="../css/bs.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src='../js/bootstrap.js'></script>
+    <!--<script type="text/javascript" src='script/html5shiv.js'></script>-->
+    <link href="../css/reg.css" rel="STYLESHEET"/>
+    
+</head>
+<body>
+    <header id="header" class="header">
+        <div class='navbar navbar-static-top'>
+            <div class='navbar-inner'>
+                <a href='home.html' class='brand'><b>Hotel</b></a>
+                <ul class='nav pull-right'>
+                    <li class="divider-vertical"></li>
+                    <li><a tabindex="-1" href="reg.html">Register</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a tabindex="-1" href="roomDescription.html">View Rooms</a></li>
+                    <li class="divider-vertical"></li>
+                    <li class='dropdown'>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id = "registration" class="registration">
+            <form id="form" class="form" action="reg.html">
+            <fieldset>
+                <h1 class="form_heading">Registration</h1>
+                <ol>
+                    <li>
+                        <label for="fName">First Name :</label>
+                        <input id="fName" type="text" width="40" maxlength="70" />
+                    </li>
+                    <li>
+                        <label for="lName">Last Name :</label>
+                        <input id="lName" type="text" width="40" maxlength="70" />
+                    </li>
+                    <li>
+                        <label for="email">Email :</label>
+                        <input id="email" type="text" width="40" maxlength="70" />
+                    </li>
+                    <li>
+                        <label for="phone">Phone :</label>
+                        <input id="phone" type="text" width="40" maxlength="70" />
+                    </li>
+                    <li>
+                        <label for="login" >Login ID :</label>
+                        <input id="login" type="text" width="40" maxlength="70" />
+                    </li>
+                    <li>
+                        <label for="pWord" >Password :</label>
+                        <input id="pWord" type="password" width="10" maxlength="10" />
+                    </li>
+                    <li>
+                        <label for="address">Address :</label>
+                        <textarea id="address" rows="2" cols="21"></textarea>
+                    </li>
+                    <li>
+                        <label for="city">City :</label>
+                        <input id="city" type="text" width="30" maxlength="50" />
+                    </li>
+                    <li>
+                        <label for="pCode">Postal Code :</label>
+                        <input id="pCode" type="text" width="30" maxlength="50" />
+                    </li>
+                    <li>
+                        <label for="country" >Country :</label>
+                        <select id="country" class="country">
+                            <option value="Canada">  Canada  </option>
+                            <option value="USA">  USA  </option>
+                        </select>
+                    </li>
+                    <li>
+                    <button type="button" class="btn btn-primary btn-register">Register</button>
+                </li>
+                </ol>
+            </fieldset>
+    </form>
+    </div>
+</body>
+</html>
+
