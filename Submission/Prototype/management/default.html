@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HotelProject">
+    <meta name="keywords" content="reservations">
+    <meta name="author" content="Georgios">
+    <title>HomePageHotel</title>
+    <link rel="stylesheet" type="text/css" href="../css/bs.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src='../js/bootstrap.js'></script>
+    <link rel="stylesheet" href="../css/reg.css"/>
+</head>
+<body>
+<header id="header" class="header">
+    <div class='navbar navbar-static-top'>
+        <div class='navbar-inner'>
+            <a href='default.html' class='brand'><b>Hotel GJCL</b></a>
+            <ul class='nav pull-right'>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="default.html">Home</a></li>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="roomDescriptionDefault.html">View Rooms</a></li>
+                <li class="divider-vertical"></li>
+                <li><a tabindex="-1" href="reg.html">Register</a></li>
+                <li class="divider-vertical"></li>
+		<li><a tabindex="-1" href="login.html">Login</a></li>
+           </ul>
+        </div>
+    </div>
+</header>
+<div class="home_main">
+    <form class="form0" action="roomDescriptionDefault.html">
+        <ol>
+            <li>
+                <label for="selectRoom">Select Room :</label>
+                <select id="selectRoom" class="selectRoom">
+                    <option>Choose</option>
+                    <option value="Standard Double Room">Standard Double Room</option>
+                    <option value="Standard Queen Room">Standard Queen Room</option>
+                    <option value="Deluxe Double Room">Deluxe Double Room</option>
+                    <option value="Deluxe King Room">Deluxe King Room</option>
+                    <option value="Balcony Studio">Balcony Studio</option>
+                    <option value="Executive Suite">Executive Suite</option>
+                </select>
+            </li>
+            <li>
+                <label for="noOfBed">Number of Beds :</label>
+                <input type="text" id="noOfBed" maxlength="40" size="30" />
+            </li>
+            <li>
+                <label for="checkIn">Check In :</label>
+                <input id="checkIn" type="date" placeholder="YYYY-MM-DD" maxlength="40" size="30"/>
+            </li>
+            <li>
+                <label for="checkOut">Check Out :</label>
+                <input id="checkOut" type="date" placeholder="YYYY-MM-DD" maxlength="40" size="30"/>
+            </li>
+            <li>
+                <a href="roomDescriptionDefault.html"><button type="button" class="btn btn-primary btn-find">Find</button></a>
+            </li>
+        </ol>
+    </form>
+    <div class="hotelInfo">
+        <h1 class="hotel_heading">Welcome to Hotel GJCL</h1>
+        <p>
+            Stay comfortable. Stay stylish. Stay at the all-new Hotel GJCL. We offer opulent accommodations and exceptional
+            service to ensure a remarkable hotel experience whether travelling for business or leisure.
+            Well-designed guest rooms pamper travellers with complimentary Wi-Fi and luxury linens so they can work
+            hard and relax comfortably while making the most of their travel time.On-site dining at the street
+            level "spin" Kitchen & Bar and a popular coffee house make it easy to maintain a busy schedule;
+            while inviting lobby spaces, an indoor pool, fitness center and Kids' Zone add to the hotel's many attributes
+            that create a relaxed stay
+        </p>
+    </div>
+</div>
+</body>
+</html>
