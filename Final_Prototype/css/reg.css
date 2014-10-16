@@ -84,8 +84,7 @@ thead,tbody{
 .customerList_heading,
 .roomInfo_heading,
 .bookRoom_heading,
-.bookingConfirm,
-.createConfirm{
+.bookingConfirm{
     display: block;
     margin-left: 7em;
     margin-top: .5em;
@@ -101,7 +100,8 @@ thead,tbody{
     font-size: 1.5em;
     color: #1240AB;
 }
-.paymentConfirm{
+.paymentConfirm,
+.createConfirm{
     margin-top: 3em;
     margin-left: 4em;
     font-weight: bold;
@@ -134,6 +134,15 @@ td img{
 }
 .roomInfo_heading{
     margin-left: 18em;
+}
+.hotel_heading{
+    display: block;
+    /*margin-left: 7em;*/
+    margin-top: .5em;
+    font-size: 1.65em;
+    color:  #1240AB;
+    /*padding: 1em 1em;*/
+
 }
 
 .form ol,
@@ -405,7 +414,7 @@ table{
     margin-left: 2%;
 }
 .home_main{
-    margin: 3em;
+    margin: 2em 0;
     display: table;
     box-sizing: border-box;
 }
